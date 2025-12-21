@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ROASOD LC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/assets/logo.jpeg" type="image/jpeg"> 
+</head>
+
+<body>
+
+  <div class="layout"> 
+    <aside class="sidebar"> 
+      <div class="logo-holder" aria-hidden="true"> 
+        <div class="logo-mark"><img src="/assets/logo.jpeg" alt="QR-LINK logo"></div>
+        <div class="logo-text">Link Convertor</div>
+      </div>
+      
+    </aside>
+
+    <main class="container"> 
+      <h1>QR Code Generator</h1>
+
+      <textarea id="input" placeholder="Paste your link here"></textarea>
+
+      <div class="controls"> 
+        <label>Size:
+          <input id="size" type="number" min="64" max="1024" value="200"> 
+        </label>
+        <button id="generate" type="button">Generate</button>
+        <button id="clear" type="button">Clear</button>
+      </div>
+
+      <div class="glass-holder"> 
+        <div id="output" class="output"> 
+          <div class="placeholder">Your QR codes will appear here — paste links and click Generate</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="glass-footer"> 
+    &copy; 2025<a id="Link.t" href="https://stxrbxyyceecee.github.io/ROASOD-Websites/" target="_blank"> ROASOD-Websites</a> — All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
