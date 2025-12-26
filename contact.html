@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us</title>
+
+</head>
+<body>
+  <style>:root {
+  --bg: linear-gradient(180deg,#09378b,#071120);
+  --card: rgba(255, 255, 255, 0.247);
+  --accent: #2d65ff;
+  --text: #e6eef8;
+  --border: rgba(180,180,180,0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 100px;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ===== LAYOUT ===== */
+.layout {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header p {
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
+/* ===== CARD ===== */
+.contact-card {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 22, 226, 0.18),
+    rgba(255,255,255,0.02)
+  );
+  border-radius: 20px;
+  padding: 24px;
+  overflow: hidden;
+}
+
+/* COOL BORDER LINES */
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1.5px;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+
+/* ===== FORM ===== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 6px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #c7d2fe;
+  padding-top: 60px;
+  bottom: 0;
+  width: 100%;
+
+}
+a {
+color: #c7d2fe;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--text);
+  font-family: inherit;
+  background: rgba(0,0,0,0.25);
+}
+  input:focus {
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* ===== BUTTON ===== */
+button {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+</style>
+
+  <div class="layout">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1>Contact</h1>
+      <p>Get in touch with us</p>
+      
+    </header>
+
+    <!-- CONTACT CARD -->
+    <section class="contact-card">
+
+      <form class="contact-form">
+        <label>
+          Name
+          <input type="text" placeholder="Your name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          Message
+          <textarea placeholder="Type your message..." rows="5" required></textarea>
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+    </section>
+
+  </div>
+<style>
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  padding: 16px 0;
+}
+
+.icon img {
+  width: 101%;
+  height: 101%;
+  object-fit: cover;
+  border-radius: 53%;
+  border-width: 2px;
+  border-style: solid;
+  display: block;
+}
+
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.icon:hover {
+  opacity: 1;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+</style>
+ <footer class="footer">
+  <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="icon">
+    <img src="icons/Facebook Black F Logo PNG _ TopPNG.jpeg" alt="Facebook">
+  </a>
+
+  <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="icon">
+    <img src="icons/Download Instagram Logo On Circle Style With Transparent Background.jpeg" alt="Instagram">
+  </a>
+
+  <a href="https://x.com" target="_blank" aria-label="X" class="icon">
+    <img src="icons/X Social Media Round Icon PNG and SVG Vector Free Download.jpeg" alt="X">
+  </a>
+
+  <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="icon">
+    <img src="icons/Tips for First Time Dîner en Blanc Attendees.jpeg" alt="YouTube">
+  </a>
+  <a href="https://stxrbxyyceecee.github.io/QRcode-Generator/" target="_blank" aria-label="ROASOD" class="icon">
+    <img src="ROASOD.png" alt="ROASOD">
+  </a>
+</footer>
+
+
+   <footer>
+  <a href="about.html">About</a> •
+  <a href="help.html">Help</a> •
+  <a href="terms of service.html">Terms</a> •
+  <a href="privacy.html">Privacy</a> •
+  <a href="index.html">Home page</a>
+  <br>
+  <br>
+  &copy; 2025 ROASOD-Websites   |  all rights reserved 
+</footer>
+
+</body>
+</html>
